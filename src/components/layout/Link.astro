@@ -1,0 +1,8 @@
+---
+import { type ILink } from "../data/layout/links";
+const { title, url } = Astro.props as ILink;
+---
+
+<a class="link" href={url}>
+	{title}
+</a>
